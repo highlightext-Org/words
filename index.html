@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Highlighter words project documentation, builder, and tests.">
+  <title>Highlighter · Words</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.6; }
+    body { max-width: 760px; margin: 0 auto; padding: 64px 24px; }
+    h1 { line-height: 1.15; font-size: clamp(2rem, 7vw, 3.5rem); }
+    a { color: light-dark(#2155bb, #9fc1ff); text-underline-offset: .2em; }
+    li { margin: 12px 0; }
+    code { overflow-wrap: anywhere; }
+    section { margin-top: 36px; }
+    footer { margin-top: 48px; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <p>Highlighter</p>
+    <h1>Words</h1>
+    <p>Keywords, phrases, and terminology for financial research and analysis.</p>
+  </header>
+  <main>
+    <section aria-labelledby="files">
+      <h2 id="files">Project files</h2>
+      <p>Browse every published project file:</p>
+      <ul>
+        <li><a href="README.md">README — documentation and data format</a></li>
+        <li><a href="scripts/build_master.py">Builder — Python source</a></li>
+        <li><a href="tests/test_build_master.py">Tests — Python source</a></li>
+        <li><a href="https://github.com/highlightext-Org/words/blob/main/.gitignore">Git ignore rules</a></li>
+        <li><a href="index.html">This index page</a></li>
+      </ul>
+    </section>
+    <section aria-labelledby="build">
+      <h2 id="build">Build locally</h2>
+      <p>Requires Python 3.9 or later, with no third-party dependencies.</p>
+      <pre><code>python3 scripts/build_master.py</code></pre>
+      <p>See the README for supported input formats and verification commands.</p>
+    </section>
+    <section aria-labelledby="privacy">
+      <h2 id="privacy">Private data stays local</h2>
+      <p>Source exports and generated master data are excluded from publication because they may contain profile, contact, and wallet information.</p>
+    </section>
+  </main>
+  <footer><a href="https://github.com/highlightext-Org/words">View repository on GitHub</a></footer>
+</body>
+</html>
