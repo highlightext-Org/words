@@ -65,8 +65,8 @@ when new sources reveal a different identity or connect previously separate grou
 Unknown JSON/CSV schemas and malformed input stop the build before replacing the
 existing master; add an explicit adapter for new export formats.
 
-## Local data privacy
+## Published data and local sources
 
-`sources/` and `master.json` are intentionally ignored by Git because exports
-can contain profile, contact, and wallet information. Keep these files local.
-Only the builder, synthetic tests, and documentation are intended for publication.
+[`master.json`](master.json) is tracked in Git and linked from [`index.html`](index.html).
+It contains the combined profile, contact, wallet, keyword, and settings data.
+Original exports in `sources/` remain ignored by Git and stay local.

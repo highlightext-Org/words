@@ -43,4 +43,3 @@ coverage.xml
 
 # Profile, contact, and wallet exports are private local inputs.
 /sources/
-/master.json
