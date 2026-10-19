@@ -1,4 +1,6 @@
 import json
+import re
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -62,6 +64,44 @@ class MasterTests(unittest.TestCase):
             (path / 'unknown.json').write_text('{}')
             with self.assertRaisesRegex(ValueError, 'unsupported JSON'):
                 build(path)
+
+    def test_regex_lines_preserve_semantics_and_provenance(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder)
+            nested = path / 'nested'
+            nested.mkdir()
+            pattern = r'\b(?:City[\s\-./]*of[\s\-./]*Burbank|Burbank)\b'
+            # Case-sensitive escapes and significant spaces must survive unchanged.
+            patterns = [pattern, r'\B\S+  END', 'Burbank', 'burbank', '  padded  ']
+            (nested / 'patterns.TXT').write_text('\ufeff\n' + '\n'.join(patterns + [pattern]) + '\n', encoding='utf-8')
+            (path / 'glow.json').write_text(json.dumps({
+                'app': 'Keyword Glow', 'settings': {'profiles': [
+                    {'id': 'p', 'name': 'Places', 'keywords': [{'text': 'Burbank'}]}]}}))
+            result = build(path)
+            regexes = {k['text']: k for k in result['keywords'] if k.get('match_mode') == 'regex'}
+            self.assertEqual(set(regexes), set(patterns))
+            self.assertEqual(regexes[pattern]['variants'], [
+                {'keyword': {'text': pattern, 'match_mode': 'regex'},
+                 'origin': {'source': 'nested/patterns.TXT', 'location': f'line:{i}'}}
+                for i in [2, 7]])
+            self.assertIsNotNone(re.search(regexes[pattern]['text'], 'City-of/Burbank'))
+            self.assertEqual(result['summary']['keywords'], 6)
+            self.assertEqual(result['summary']['profile_observations'], 0)
+            self.assertEqual(result['sources'][1]['records'], 6)
+            self.assertEqual(result, build(path))
+
+    def test_invalid_regex_leaves_existing_master_untouched(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder)
+            (path / 'bad.txt').write_text('valid\n\n[invalid\n')
+            output = path / 'master.json'
+            output.write_text('existing master\n')
+            run = subprocess.run([
+                sys.executable, str(Path(__file__).resolve().parents[1] / 'scripts/build_master.py'),
+                '--sources', str(path), '--output', str(output)], capture_output=True, text=True)
+            self.assertNotEqual(run.returncode, 0)
+            self.assertIn('bad.txt:line:3: invalid regex', run.stderr)
+            self.assertEqual(output.read_text(), 'existing master\n')
 
     def test_latest_value_can_return_to_previous_value(self):
         with tempfile.TemporaryDirectory() as folder:

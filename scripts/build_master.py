@@ -107,6 +107,16 @@ def normalize(raw):
 
 def read_source(path):
     """Yield kind, location, raw row, context; reject unknown schemas."""
+    if path.suffix.lower() == '.txt':
+        for i, line in enumerate(path.read_text(encoding='utf-8-sig').splitlines(), 1):
+            if not line.strip():
+                continue
+            try:
+                re.compile(line)
+            except re.error as error:
+                raise ValueError(f'{path}:line:{i}: invalid regex: {error}') from error
+            yield 'regex', f'line:{i}', {'text': line, 'match_mode': 'regex'}, {}
+        return
     if path.suffix.lower() == '.csv':
         with path.open(encoding='utf-8-sig', newline='') as stream:
             reader = csv.DictReader(stream)
@@ -139,10 +149,10 @@ def read_source(path):
 
 
 def build(source_dir, output=None):
-    files = sorted(p for p in source_dir.rglob('*') if p.suffix.lower() in {'.csv', '.json'} and (output is None or p.resolve() != output.resolve()))
+    files = sorted(p for p in source_dir.rglob('*') if p.is_file() and p.suffix.lower() in {'.csv', '.json', '.txt'} and (output is None or p.resolve() != output.resolve()))
     if not files:
-        raise ValueError(f'No JSON/CSV sources found in {source_dir}')
-    observations, settings, manifest, warnings = [], [], [], []
+        raise ValueError(f'No JSON/CSV/TXT sources found in {source_dir}')
+    observations, settings, manifest, warnings, regexes = [], [], [], [], []
     for path in files:
         source = path.relative_to(source_dir).as_posix()
         count = 0
@@ -151,6 +161,9 @@ def build(source_dir, output=None):
             origin = {'source': source, 'location': location}
             if kind == 'settings':
                 settings.append({'origin': origin, 'context': context, 'raw': raw})
+                continue
+            if kind == 'regex':
+                regexes.append({'keyword': raw, 'origin': origin})
                 continue
             fields, handles, wallets, urls, issues = normalize(raw)
             for issue in issues:
@@ -218,8 +231,12 @@ def build(source_dir, output=None):
         for profile in config['raw'].get('profiles', []):
             for keyword in profile.get('keywords', []):
                 text = ' '.join(keyword['text'].split()).casefold()
-                item = keywords.setdefault(text, {'text': text, 'variants': []})
+                item = keywords.setdefault(('literal', text), {'text': text, 'variants': []})
                 item['variants'].append({'profile_id': profile['id'], 'profile_name': profile['name'], 'keyword': keyword, 'origin': config['origin']})
+    for variant in regexes:
+        text = variant['keyword']['text']
+        item = keywords.setdefault(('regex', text), {'text': text, 'match_mode': 'regex', 'variants': []})
+        item['variants'].append(variant)
     return {'schema_version': 1, 'sources': manifest,
             'summary': {'source_files': len(files), 'input_records': sum(m['records'] for m in manifest),
                         'profile_observations': len(observations), 'master_profiles': len(entities),
@@ -227,7 +244,8 @@ def build(source_dir, output=None):
                         'holdings': len(holdings), 'keywords': len(keywords), 'warnings': len(warnings)},
             'profiles': sorted(entities, key=lambda e: e['id']),
             'holdings': sorted(holdings.values(), key=lambda h: h['id']),
-            'keywords': [keywords[k] for k in sorted(keywords)], 'settings': settings, 'warnings': warnings}
+            'keywords': sorted(keywords.values(), key=lambda k: (k['text'], k.get('match_mode', 'literal'))),
+            'settings': settings, 'warnings': warnings}
 
 
 def main():

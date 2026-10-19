@@ -9,7 +9,7 @@ Requires Python 3.9+ with no third-party dependencies. From this directory:
 python3 scripts/build_master.py
 ```
 
-This reads JSON and CSV files recursively in `sources/` and atomically writes
+This reads JSON, CSV, and TXT files recursively in `sources/` and atomically writes
 `master.json`. Source files are never modified. Custom paths are supported:
 
 ```sh
@@ -27,7 +27,8 @@ The single JSON output contains:
   (`1.12%` becomes `1.12`); currency symbols and K/M/B/T suffixes are expanded.
   The source meaning of `final` is retained without assuming a financial definition.
 - `keywords`: whitespace/case-normalized keyword entries, retaining all original
-  variants and their profile settings.
+  variants and their profile settings. Regex entries have `match_mode: "regex"`
+  and preserve exact pattern text instead of normalizing whitespace or case.
 - `settings`: complete Keyword Glow settings, including empty profiles.
 - `sources`, `summary`, and `warnings`: file hashes, reconciliation counts, and
   invalid identity/number values requiring review.
@@ -41,6 +42,17 @@ The single JSON output contains:
 | Pump Holder Lab JSON | Flatten snapshot rows; `x` → X identity; wallet → profile link; retain mint/time/price/URL for each holding |
 | Profile audit CSV (both versions) | `profile_url` → website identity; yes/no → booleans; semicolon contact/platform lists → arrays; absent fields remain absent |
 | Keyword Glow JSON | Combine matching keyword text while preserving profile membership, colors, enabled states, and settings |
+| Regex TXT (one pattern per line) | Preserve each nonblank line verbatim as a regex keyword, with source filename and line number; combine exact duplicates while retaining every origin |
+
+Every `.txt` source is treated as a UTF-8 (optional BOM) regex list. Blank lines
+are ignored; other lines must compile with Python's `re` module. Patterns have
+no added flags, colors, enabled states, or profile assignments. Regex variants
+contain `keyword` and `origin`; profile fields are absent because these lists
+do not export profiles. Consumers must use regex matching for entries marked
+`match_mode: "regex"`; entries without that marker retain literal keyword behavior.
+Regexes are deduplicated by exact text, separately from literal keywords. Overlapping
+patterns and alternative spellings remain intact. Invalid patterns stop the build
+with the source filename and line number before the existing master is replaced.
 
 Matching uses exact normalized X handles, case-sensitive wallets, or canonical
 profile URLs, including transitive links across files. URL schemes/hosts and

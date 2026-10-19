@@ -2,6 +2,11 @@
   "schema_version": 1,
   "sources": [
     {
+      "source": "highlightext_burbank_regex_one_per_line.txt",
+      "sha256": "21736795f00a5eeca748c9a0c999fd643c4a936777c31f95b629fb0014a9f29f",
+      "records": 226
+    },
+    {
       "source": "keyword-glow-profiles.json",
       "sha256": "19e843c4e98a7dcc2f1090fe9a526d13f012aa1ff36ab083a2a1c3e7bca2d4af",
       "records": 1
@@ -33,13 +38,13 @@
     }
   ],
   "summary": {
-    "source_files": 6,
-    "input_records": 15490,
+    "source_files": 7,
+    "input_records": 15716,
     "profile_observations": 15489,
     "master_profiles": 5056,
     "merged_profile_observations": 10433,
     "holdings": 10491,
-    "keywords": 28,
+    "keywords": 254,
     "warnings": 0
   },
   "profiles": [
@@ -869874,6 +869879,3622 @@
     }
   ],
   "keywords": [
+    {
+      "text": "\\b(?:2028[\\s\\-./]*Olympics)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:2028[\\s\\-./]*Olympics)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:139"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:911[\\s\\-./]*response)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:911[\\s\\-./]*response)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:38"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Board[\\s\\-./]*of[\\s\\-./]*Education)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Board[\\s\\-./]*of[\\s\\-./]*Education)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:113"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Bob[\\s\\-./]*Hope[\\s\\-./]*Airport|Burbank[\\s\\-./]*Airport)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Bob[\\s\\-./]*Hope[\\s\\-./]*Airport|Burbank[\\s\\-./]*Airport)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:141"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Buena[\\s\\-./]*Vista[\\s\\-./]*Street)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Buena[\\s\\-./]*Vista[\\s\\-./]*Street)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:9"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Airport[\\s\\-./]*Authority)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Airport[\\s\\-./]*Authority)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:190"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*City[\\s\\-./]*Clerk)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*City[\\s\\-./]*Clerk)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:189"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*City[\\s\\-./]*Council)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*City[\\s\\-./]*Council)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:183"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*City[\\s\\-./]*Hall)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*City[\\s\\-./]*Hall)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:184"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Hills)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Hills)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:7"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Housing[\\s\\-./]*Corporation)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Housing[\\s\\-./]*Corporation)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:187"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Measure[\\s\\-./]*CC|Measure[\\s\\-./]*CC)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Measure[\\s\\-./]*CC|Measure[\\s\\-./]*CC)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:13"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Measure[\\s\\-./]*CD|Measure[\\s\\-./]*CD)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Measure[\\s\\-./]*CD|Measure[\\s\\-./]*CD)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:14"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Measure[\\s\\-./]*C|Measure[\\s\\-./]*C|Prop[\\s\\-./]*C)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Measure[\\s\\-./]*C|Measure[\\s\\-./]*C|Prop[\\s\\-./]*C)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:12"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*PD|BPD)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*PD|BPD)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:92"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Police[\\s\\-./]*Department)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Police[\\s\\-./]*Department)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:185"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Police|Burbank[\\s\\-./]*PD)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Police|Burbank[\\s\\-./]*PD)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:91"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Unified[\\s\\-./]*School[\\s\\-./]*District)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Unified[\\s\\-./]*School[\\s\\-./]*District)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:186"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Unified[\\s\\-./]*School[\\s\\-./]*District|Burbank[\\s\\-./]*Unified)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Unified[\\s\\-./]*School[\\s\\-./]*District|Burbank[\\s\\-./]*Unified)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:111"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Unified|BUSD)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Unified|BUSD)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:110"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Water[\\s\\-./]*and[\\s\\-./]*Power)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Water[\\s\\-./]*and[\\s\\-./]*Power)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:160"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Burbank[\\s\\-./]*Water[\\s\\-./]*and[\\s\\-./]*Power|BWP)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Burbank[\\s\\-./]*Water[\\s\\-./]*and[\\s\\-./]*Power|BWP)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:161"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:CVRA)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:CVRA)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:22"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:California[\\s\\-./]*Voting[\\s\\-./]*Rights[\\s\\-./]*Act)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:California[\\s\\-./]*Voting[\\s\\-./]*Rights[\\s\\-./]*Act)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:21"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Chris[\\s\\-./]*Yoosefi)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Chris[\\s\\-./]*Yoosefi)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:171"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:City[\\s\\-./]*of[\\s\\-./]*Burbank|Burbank[\\s\\-./]*CA|Burbank)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:City[\\s\\-./]*of[\\s\\-./]*Burbank|Burbank[\\s\\-./]*CA|Burbank)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:1"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:David[\\s\\-./]*Donahue)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:David[\\s\\-./]*Donahue)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:168"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Dennis[\\s\\-./]*M[\\s\\-./]*Connor)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Dennis[\\s\\-./]*M[\\s\\-./]*Connor)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:177"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Downtown[\\s\\-./]*Burbank)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Downtown[\\s\\-./]*Burbank)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:2"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Eddy[\\s\\-./]*Polon)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Eddy[\\s\\-./]*Polon)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:164"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Elevate[\\s\\-./]*BUR)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Elevate[\\s\\-./]*BUR)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:142"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Evren[\\s\\-./]*Ozbey)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Evren[\\s\\-./]*Ozbey)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:181"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Fair[\\s\\-./]*Political[\\s\\-./]*Practices[\\s\\-./]*Commission|FPPC)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Fair[\\s\\-./]*Political[\\s\\-./]*Practices[\\s\\-./]*Commission|FPPC)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:26"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Flock[\\s\\-./]*Safety)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Flock[\\s\\-./]*Safety)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:93"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Flock[\\s\\-./]*cameras)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Flock[\\s\\-./]*cameras)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:94"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:George[\\s\\-./]*Saikali)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:George[\\s\\-./]*Saikali)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:182"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Hai[\\s\\-./]*Ho)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Hai[\\s\\-./]*Ho)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:179"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Hollywood[\\s\\-./]*Burbank[\\s\\-./]*Airport|Burbank[\\s\\-./]*Airport|BUR[\\s\\-./]*Airport)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Hollywood[\\s\\-./]*Burbank[\\s\\-./]*Airport|Burbank[\\s\\-./]*Airport|BUR[\\s\\-./]*Airport)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:140"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Hollywood[\\s\\-./]*Way)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Hollywood[\\s\\-./]*Way)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:10"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Hovanes[\\s\\-./]*Tonoyan)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Hovanes[\\s\\-./]*Tonoyan)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:173"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:JT[\\s\\-./]*Parr)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:JT[\\s\\-./]*Parr)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:165"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Jackie[\\s\\-./]*Waltman)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Jackie[\\s\\-./]*Waltman)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:162"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Jonathan[\\s\\-./]*Ontiveros)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Jonathan[\\s\\-./]*Ontiveros)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:167"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Kimberley[\\s\\-./]*Clark)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Kimberley[\\s\\-./]*Clark)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:175"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Krystle[\\s\\-./]*Palmer)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Krystle[\\s\\-./]*Palmer)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:176"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:League[\\s\\-./]*of[\\s\\-./]*Women[\\s\\-./]*Voters)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:League[\\s\\-./]*of[\\s\\-./]*Women[\\s\\-./]*Voters)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:191"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Los[\\s\\-./]*Angeles[\\s\\-./]*Metro)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Los[\\s\\-./]*Angeles[\\s\\-./]*Metro)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:188"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Magnolia[\\s\\-./]*Park)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Magnolia[\\s\\-./]*Park)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:3"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Media[\\s\\-./]*District)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Media[\\s\\-./]*District)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:5"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Metro[\\s\\-./]*Los[\\s\\-./]*Angeles|L[\\s\\-./]*A[\\s\\-./]*Metro|LA[\\s\\-./]*Metro)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Metro[\\s\\-./]*Los[\\s\\-./]*Angeles|L[\\s\\-./]*A[\\s\\-./]*Metro|LA[\\s\\-./]*Metro)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:77"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Metro[\\s\\-./]*lawsuit)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Metro[\\s\\-./]*lawsuit)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:78"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Metrolink)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Metrolink)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:83"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Mike[\\s\\-./]*Van[\\s\\-./]*Gorder)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Mike[\\s\\-./]*Van[\\s\\-./]*Gorder)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:172"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Nikki[\\s\\-./]*Perez)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Nikki[\\s\\-./]*Perez)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:166"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Nolan[\\s\\-./]*Southerland)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Nolan[\\s\\-./]*Southerland)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:169"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:North[\\s\\-./]*Hollywood[\\s\\-./]*Pasadena|NoHo[\\s\\-./]*Pasadena)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:North[\\s\\-./]*Hollywood[\\s\\-./]*Pasadena|NoHo[\\s\\-./]*Pasadena)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:75"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:North[\\s\\-./]*Hollywood[\\s\\-./]*to[\\s\\-./]*Pasadena|NoHo[\\s\\-./]*to[\\s\\-./]*Pasadena)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:North[\\s\\-./]*Hollywood[\\s\\-./]*to[\\s\\-./]*Pasadena|NoHo[\\s\\-./]*to[\\s\\-./]*Pasadena)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:76"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Olive[\\s\\-./]*Avenue)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Olive[\\s\\-./]*Avenue)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:8"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Olive[\\s\\-./]*Avenue[\\s\\-./]*bus[\\s\\-./]*lane)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Olive[\\s\\-./]*Avenue[\\s\\-./]*bus[\\s\\-./]*lane)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:81"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Paul[\\s\\-./]*Gerard)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Paul[\\s\\-./]*Gerard)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:178"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Rancho[\\s\\-./]*District)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Rancho[\\s\\-./]*District)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:6"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Robbie[\\s\\-./]*Brody)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Robbie[\\s\\-./]*Brody)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:170"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Rosemary[\\s\\-./]*T[\\s\\-./]*Morrison)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Rosemary[\\s\\-./]*T[\\s\\-./]*Morrison)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:180"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:SB[\\s\\-./]*79[\\s\\-./]*transit)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:SB[\\s\\-./]*79[\\s\\-./]*transit)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:82"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Samantha[\\s\\-./]*Wick)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Samantha[\\s\\-./]*Wick)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:163"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:San[\\s\\-./]*Fernando[\\s\\-./]*Boulevard)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:San[\\s\\-./]*Fernando[\\s\\-./]*Boulevard)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:11"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Senate[\\s\\-./]*Bill[\\s\\-./]*79|SB[\\s\\-./]*79|SB79)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Senate[\\s\\-./]*Bill[\\s\\-./]*79|SB[\\s\\-./]*79|SB79)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:61"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Tamala[\\s\\-./]*Takahashi)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Tamala[\\s\\-./]*Takahashi)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:174"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Toluca[\\s\\-./]*Lake)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Toluca[\\s\\-./]*Lake)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:4"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:Vision[\\s\\-./]*Zero)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:Vision[\\s\\-./]*Zero)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:88"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:accessory[\\s\\-./]*dwelling[\\s\\-./]*unit)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:accessory[\\s\\-./]*dwelling[\\s\\-./]*unit)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:63"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:affordable[\\s\\-./]*housing)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:affordable[\\s\\-./]*housing)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:54"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:air[\\s\\-./]*quality)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:air[\\s\\-./]*quality)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:154"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:airport[\\s\\-./]*access)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:airport[\\s\\-./]*access)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:148"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:airport[\\s\\-./]*noise)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:airport[\\s\\-./]*noise)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:145"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:airport[\\s\\-./]*terminal)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:airport[\\s\\-./]*terminal)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:144"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:airport[\\s\\-./]*traffic)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:airport[\\s\\-./]*traffic)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:147"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:at[\\s\\-./]*large[\\s\\-./]*elections)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:at[\\s\\-./]*large[\\s\\-./]*elections)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:18"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:automated[\\s\\-./]*license[\\s\\-./]*plate[\\s\\-./]*readers)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:automated[\\s\\-./]*license[\\s\\-./]*plate[\\s\\-./]*readers)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:97"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:backyard[\\s\\-./]*cottage|granny[\\s\\-./]*flat|ADUs|ADU)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:backyard[\\s\\-./]*cottage|granny[\\s\\-./]*flat|ADUs|ADU)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:62"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:bike[\\s\\-./]*lanes)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:bike[\\s\\-./]*lanes)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:87"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:broken[\\s\\-./]*sidewalks|street[\\s\\-./]*repairs|potholes|roadwork)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:broken[\\s\\-./]*sidewalks|street[\\s\\-./]*repairs|potholes|roadwork)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:202"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:build[\\s\\-./]*more[\\s\\-./]*housing|apartment[\\s\\-./]*buildings|infill[\\s\\-./]*housing|new[\\s\\-./]*condos|NIMBY|YIMBY)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:build[\\s\\-./]*more[\\s\\-./]*housing|apartment[\\s\\-./]*buildings|infill[\\s\\-./]*housing|new[\\s\\-./]*condos|NIMBY|YIMBY)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:196"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:bumper[\\s\\-./]*to[\\s\\-./]*bumper|traffic[\\s\\-./]*jam|rush[\\s\\-./]*hour|congestion|gridlock)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:bumper[\\s\\-./]*to[\\s\\-./]*bumper|traffic[\\s\\-./]*jam|rush[\\s\\-./]*hour|congestion|gridlock)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:198"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:bus[\\s\\-./]*lane)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:bus[\\s\\-./]*lane)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:79"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:bus[\\s\\-./]*rapid[\\s\\-./]*transit)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:bus[\\s\\-./]*rapid[\\s\\-./]*transit)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:74"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:bus[\\s\\-./]*rapid[\\s\\-./]*transit|BRT)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:bus[\\s\\-./]*rapid[\\s\\-./]*transit|BRT)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:73"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:business[\\s\\-./]*permits)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:business[\\s\\-./]*permits)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:131"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:business[\\s\\-./]*tax)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:business[\\s\\-./]*tax)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:137"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:businesses[\\s\\-./]*leaving|storefronts[\\s\\-./]*empty|empty[\\s\\-./]*storefronts|shops[\\s\\-./]*closing|layoffs)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:businesses[\\s\\-./]*leaving|storefronts[\\s\\-./]*empty|empty[\\s\\-./]*storefronts|shops[\\s\\-./]*closing|layoffs)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:219"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:by[\\s\\-./]*district[\\s\\-./]*elections)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:by[\\s\\-./]*district[\\s\\-./]*elections)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:17"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:campaign[\\s\\-./]*contributions)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:campaign[\\s\\-./]*contributions)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:25"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:campaign[\\s\\-./]*disclosure)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:campaign[\\s\\-./]*disclosure)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:27"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:campus[\\s\\-./]*maintenance|school[\\s\\-./]*buildings|school[\\s\\-./]*repairs)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:campus[\\s\\-./]*maintenance|school[\\s\\-./]*buildings|school[\\s\\-./]*repairs)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:211"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:can[\\s\\-./]*t[\\s\\-./]*afford[\\s\\-./]*rent|cost[\\s\\-./]*of[\\s\\-./]*living|housing[\\s\\-./]*shortage|housing[\\s\\-./]*crisis|priced[\\s\\-./]*out)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:can[\\s\\-./]*t[\\s\\-./]*afford[\\s\\-./]*rent|cost[\\s\\-./]*of[\\s\\-./]*living|housing[\\s\\-./]*shortage|housing[\\s\\-./]*crisis|priced[\\s\\-./]*out)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:193"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:charter[\\s\\-./]*amendment)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:charter[\\s\\-./]*amendment)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:16"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:city[\\s\\-./]*budget)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:city[\\s\\-./]*budget)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:34"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:city[\\s\\-./]*clerk)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:city[\\s\\-./]*clerk)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:28"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:city[\\s\\-./]*council[\\s\\-./]*candidates|candidate[\\s\\-./]*forum|local[\\s\\-./]*election|campaign[\\s\\-./]*trail|debate[\\s\\-./]*night)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:city[\\s\\-./]*council[\\s\\-./]*candidates|candidate[\\s\\-./]*forum|local[\\s\\-./]*election|campaign[\\s\\-./]*trail|debate[\\s\\-./]*night)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:212"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:city[\\s\\-./]*council[\\s\\-./]*election)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:city[\\s\\-./]*council[\\s\\-./]*election)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:23"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:city[\\s\\-./]*services)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:city[\\s\\-./]*services)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:33"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:city[\\s\\-./]*services[\\s\\-./]*measure)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:city[\\s\\-./]*services[\\s\\-./]*measure)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:15"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:city[\\s\\-./]*treasurer)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:city[\\s\\-./]*treasurer)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:29"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:class[\\s\\-./]*size)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:class[\\s\\-./]*size)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:123"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:climate[\\s\\-./]*action)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:climate[\\s\\-./]*action)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:155"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:commercial[\\s\\-./]*vacancies)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:commercial[\\s\\-./]*vacancies)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:135"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:corporate[\\s\\-./]*landlord)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:corporate[\\s\\-./]*landlord)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:65"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:costs[\\s\\-./]*going[\\s\\-./]*up|businesses[\\s\\-./]*struggling|job[\\s\\-./]*losses|lost[\\s\\-./]*jobs)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:costs[\\s\\-./]*going[\\s\\-./]*up|businesses[\\s\\-./]*struggling|job[\\s\\-./]*losses|lost[\\s\\-./]*jobs)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:221"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:crime[\\s\\-./]*prevention)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:crime[\\s\\-./]*prevention)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:108"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:dangerous[\\s\\-./]*intersection|hit[\\s\\-./]*and[\\s\\-./]*run|road[\\s\\-./]*rage|crosswalk|speeding)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:dangerous[\\s\\-./]*intersection|hit[\\s\\-./]*and[\\s\\-./]*run|road[\\s\\-./]*rage|crosswalk|speeding)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:199"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:data[\\s\\-./]*retention)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:data[\\s\\-./]*retention)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:100"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:data[\\s\\-./]*sharing)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:data[\\s\\-./]*sharing)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:101"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:dedicated[\\s\\-./]*bus[\\s\\-./]*lane)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:dedicated[\\s\\-./]*bus[\\s\\-./]*lane)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:80"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:disaster[\\s\\-./]*response)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:disaster[\\s\\-./]*response)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:107"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:district[\\s\\-./]*based[\\s\\-./]*elections|at[\\s\\-./]*large[\\s\\-./]*voting|voting[\\s\\-./]*districts|district[\\s\\-./]*map|gerrymandering)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:district[\\s\\-./]*based[\\s\\-./]*elections|at[\\s\\-./]*large[\\s\\-./]*voting|voting[\\s\\-./]*districts|district[\\s\\-./]*map|gerrymandering)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:214"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:district[\\s\\-./]*voting)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:district[\\s\\-./]*voting)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:19"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:economic[\\s\\-./]*development)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:economic[\\s\\-./]*development)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:132"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:education[\\s\\-./]*funding)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:education[\\s\\-./]*funding)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:120"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:election[\\s\\-./]*representation)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:election[\\s\\-./]*representation)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:20"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:electric[\\s\\-./]*utilities)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:electric[\\s\\-./]*utilities)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:159"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:emergency[\\s\\-./]*preparedness)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:emergency[\\s\\-./]*preparedness)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:106"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:emergency[\\s\\-./]*response)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:emergency[\\s\\-./]*response)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:39"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:entertainment[\\s\\-./]*industry)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:entertainment[\\s\\-./]*industry)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:127"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:eviction)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:eviction)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:49"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:film[\\s\\-./]*industry[\\s\\-./]*jobs|production[\\s\\-./]*slowdown|Hollywood[\\s\\-./]*slowdown|studio[\\s\\-./]*layoffs|strike[\\s\\-./]*impact)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:film[\\s\\-./]*industry[\\s\\-./]*jobs|production[\\s\\-./]*slowdown|Hollywood[\\s\\-./]*slowdown|studio[\\s\\-./]*layoffs|strike[\\s\\-./]*impact)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:220"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:film[\\s\\-./]*jobs)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:film[\\s\\-./]*jobs)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:125"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:film[\\s\\-./]*production)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:film[\\s\\-./]*production)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:128"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:fire[\\s\\-./]*department)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:fire[\\s\\-./]*department)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:104"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:fiscal[\\s\\-./]*responsibility)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:fiscal[\\s\\-./]*responsibility)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:36"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:fiscal[\\s\\-./]*transparency)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:fiscal[\\s\\-./]*transparency)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:121"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:flight[\\s\\-./]*paths)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:flight[\\s\\-./]*paths)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:146"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:gas[\\s\\-./]*powered[\\s\\-./]*leaf[\\s\\-./]*blowers)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:gas[\\s\\-./]*powered[\\s\\-./]*leaf[\\s\\-./]*blowers)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:150"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:general[\\s\\-./]*fund)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:general[\\s\\-./]*fund)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:35"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:green[\\s\\-./]*spaces)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:green[\\s\\-./]*spaces)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:158"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:homeless[\\s\\-./]*shelter)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:homeless[\\s\\-./]*shelter)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:69"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:homeless[\\s\\-./]*solutions[\\s\\-./]*center)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:homeless[\\s\\-./]*solutions[\\s\\-./]*center)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:72"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:homelessness)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:homelessness)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:68"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:hotel[\\s\\-./]*room[\\s\\-./]*tax|tax[\\s\\-./]*increase|higher[\\s\\-./]*taxes|tax[\\s\\-./]*hike|bed[\\s\\-./]*tax|TOT[\\s\\-./]*tax)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:hotel[\\s\\-./]*room[\\s\\-./]*tax|tax[\\s\\-./]*increase|higher[\\s\\-./]*taxes|tax[\\s\\-./]*hike|bed[\\s\\-./]*tax|TOT[\\s\\-./]*tax)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:216"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:hotel[\\s\\-./]*tax)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:hotel[\\s\\-./]*tax)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:31"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:housing[\\s\\-./]*affordability)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:housing[\\s\\-./]*affordability)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:66"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:housing[\\s\\-./]*density)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:housing[\\s\\-./]*density)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:58"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:housing[\\s\\-./]*element)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:housing[\\s\\-./]*element)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:56"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:housing[\\s\\-./]*enforcement)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:housing[\\s\\-./]*enforcement)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:53"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:housing[\\s\\-./]*supply)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:housing[\\s\\-./]*supply)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:55"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:housing[\\s\\-./]*trust)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:housing[\\s\\-./]*trust)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:71"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:infrastructure[\\s\\-./]*funding)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:infrastructure[\\s\\-./]*funding)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:43"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:jobs)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:jobs)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:134"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:landlord[\\s\\-./]*tenant[\\s\\-./]*commission)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:landlord[\\s\\-./]*tenant[\\s\\-./]*commission)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:64"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:leaf[\\s\\-./]*blower[\\s\\-./]*ban)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:leaf[\\s\\-./]*blower[\\s\\-./]*ban)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:149"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:libraries[\\s\\-./]*closing|park[\\s\\-./]*maintenance|reduced[\\s\\-./]*services|service[\\s\\-./]*cuts|cut[\\s\\-./]*services)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:libraries[\\s\\-./]*closing|park[\\s\\-./]*maintenance|reduced[\\s\\-./]*services|service[\\s\\-./]*cuts|cut[\\s\\-./]*services)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:218"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:library[\\s\\-./]*funding)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:library[\\s\\-./]*funding)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:41"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:license[\\s\\-./]*plate[\\s\\-./]*reader)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:license[\\s\\-./]*plate[\\s\\-./]*reader)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:95"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:license[\\s\\-./]*plate[\\s\\-./]*recognition|ALPR|LPR)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:license[\\s\\-./]*plate[\\s\\-./]*recognition|ALPR|LPR)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:96"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:local[\\s\\-./]*businesses)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:local[\\s\\-./]*businesses)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:133"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:loud[\\s\\-./]*leaf[\\s\\-./]*blowers|landscaping[\\s\\-./]*noise|gas[\\s\\-./]*blowers|blower[\\s\\-./]*ban)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:loud[\\s\\-./]*leaf[\\s\\-./]*blowers|landscaping[\\s\\-./]*noise|gas[\\s\\-./]*blowers|blower[\\s\\-./]*ban)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:224"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:mass[\\s\\-./]*surveillance|privacy[\\s\\-./]*violation|data[\\s\\-./]*collected|tracking[\\s\\-./]*cars|spying)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:mass[\\s\\-./]*surveillance|privacy[\\s\\-./]*violation|data[\\s\\-./]*collected|tracking[\\s\\-./]*cars|spying)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:205"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:media[\\s\\-./]*jobs)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:media[\\s\\-./]*jobs)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:129"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:mixed[\\s\\-./]*use[\\s\\-./]*housing)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:mixed[\\s\\-./]*use[\\s\\-./]*housing)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:57"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:municipal[\\s\\-./]*election)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:municipal[\\s\\-./]*election)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:24"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:new[\\s\\-./]*apartments)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:new[\\s\\-./]*apartments)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:67"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:no[\\s\\-./]*fault[\\s\\-./]*eviction)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:no[\\s\\-./]*fault[\\s\\-./]*eviction)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:50"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:no[\\s\\-./]*fault[\\s\\-./]*eviction|getting[\\s\\-./]*evicted|eviction[\\s\\-./]*notice|kicked[\\s\\-./]*out)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:no[\\s\\-./]*fault[\\s\\-./]*eviction|getting[\\s\\-./]*evicted|eviction[\\s\\-./]*notice|kicked[\\s\\-./]*out)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:194"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:noho[\\s\\-./]*pasadena[\\s\\-./]*bus|metro[\\s\\-./]*bus[\\s\\-./]*project|bus[\\s\\-./]*only[\\s\\-./]*lane|dedicated[\\s\\-./]*lanes|busway)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:noho[\\s\\-./]*pasadena[\\s\\-./]*bus|metro[\\s\\-./]*bus[\\s\\-./]*project|bus[\\s\\-./]*only[\\s\\-./]*lane|dedicated[\\s\\-./]*lanes|busway)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:201"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:noise[\\s\\-./]*pollution|air[\\s\\-./]*pollution|car[\\s\\-./]*exhaust|dirty[\\s\\-./]*air|smog)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:noise[\\s\\-./]*pollution|air[\\s\\-./]*pollution|car[\\s\\-./]*exhaust|dirty[\\s\\-./]*air|smog)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:225"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:overcrowded[\\s\\-./]*classrooms|classroom[\\s\\-./]*sizes|student[\\s\\-./]*safety|bullying)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:overcrowded[\\s\\-./]*classrooms|classroom[\\s\\-./]*sizes|student[\\s\\-./]*safety|bullying)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:210"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:parking)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:parking)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:90"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:parking[\\s\\-./]*shortage|parking[\\s\\-./]*tickets|street[\\s\\-./]*parking|no[\\s\\-./]*parking)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:parking[\\s\\-./]*shortage|parking[\\s\\-./]*tickets|street[\\s\\-./]*parking|no[\\s\\-./]*parking)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:200"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:parks[\\s\\-./]*funding)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:parks[\\s\\-./]*funding)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:40"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:pedestrian[\\s\\-./]*safety)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:pedestrian[\\s\\-./]*safety)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:86"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:people[\\s\\-./]*living[\\s\\-./]*on[\\s\\-./]*the[\\s\\-./]*streets|living[\\s\\-./]*in[\\s\\-./]*cars|homeless[\\s\\-./]*encampment|tent[\\s\\-./]*city|encampments|unhoused)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:people[\\s\\-./]*living[\\s\\-./]*on[\\s\\-./]*the[\\s\\-./]*streets|living[\\s\\-./]*in[\\s\\-./]*cars|homeless[\\s\\-./]*encampment|tent[\\s\\-./]*city|encampments|unhoused)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:197"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:planes[\\s\\-./]*too[\\s\\-./]*loud|planes[\\s\\-./]*overhead|airplane[\\s\\-./]*noise|flight[\\s\\-./]*noise|jet[\\s\\-./]*noise)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:planes[\\s\\-./]*too[\\s\\-./]*loud|planes[\\s\\-./]*overhead|airplane[\\s\\-./]*noise|flight[\\s\\-./]*noise|jet[\\s\\-./]*noise)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:222"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:plastic[\\s\\-./]*ordinance)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:plastic[\\s\\-./]*ordinance)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:151"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:police[\\s\\-./]*oversight)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:police[\\s\\-./]*oversight)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:102"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:police[\\s\\-./]*presence|police[\\s\\-./]*response|crime[\\s\\-./]*spike|break[\\s\\-./]*ins|shoplifting|burglaries|cops)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:police[\\s\\-./]*presence|police[\\s\\-./]*response|crime[\\s\\-./]*spike|break[\\s\\-./]*ins|shoplifting|burglaries|cops)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:203"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:political[\\s\\-./]*donations|campaign[\\s\\-./]*donations|campaign[\\s\\-./]*cash|PAC[\\s\\-./]*money|donors)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:political[\\s\\-./]*donations|campaign[\\s\\-./]*donations|campaign[\\s\\-./]*cash|PAC[\\s\\-./]*money|donors)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:213"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:privacy)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:privacy)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:99"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:public[\\s\\-./]*funding)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:public[\\s\\-./]*funding)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:37"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:public[\\s\\-./]*safety)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:public[\\s\\-./]*safety)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:103"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:public[\\s\\-./]*surveillance)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:public[\\s\\-./]*surveillance)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:98"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:public[\\s\\-./]*works)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:public[\\s\\-./]*works)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:42"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:recycling)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:recycling)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:157"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:red[\\s\\-./]*flag[\\s\\-./]*warning|fire[\\s\\-./]*evacuation|wildfire[\\s\\-./]*risk|fire[\\s\\-./]*safety|brush[\\s\\-./]*fire)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:red[\\s\\-./]*flag[\\s\\-./]*warning|fire[\\s\\-./]*evacuation|wildfire[\\s\\-./]*risk|fire[\\s\\-./]*safety|brush[\\s\\-./]*fire)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:206"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:relocation[\\s\\-./]*assistance)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:relocation[\\s\\-./]*assistance)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:51"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:rent[\\s\\-./]*cap)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:rent[\\s\\-./]*cap)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:45"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:rent[\\s\\-./]*control)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:rent[\\s\\-./]*control)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:44"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:rent[\\s\\-./]*going[\\s\\-./]*up|rent[\\s\\-./]*too[\\s\\-./]*high|rents[\\s\\-./]*skyrocketing|rent[\\s\\-./]*raised|rent[\\s\\-./]*hikes|rent[\\s\\-./]*hike)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:rent[\\s\\-./]*going[\\s\\-./]*up|rent[\\s\\-./]*too[\\s\\-./]*high|rents[\\s\\-./]*skyrocketing|rent[\\s\\-./]*raised|rent[\\s\\-./]*hikes|rent[\\s\\-./]*hike)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:192"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:rent[\\s\\-./]*stabilization)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:rent[\\s\\-./]*stabilization)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:46"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:renter[\\s\\-./]*protections)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:renter[\\s\\-./]*protections)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:48"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:replacement[\\s\\-./]*airport[\\s\\-./]*terminal|new[\\s\\-./]*airport[\\s\\-./]*terminal|terminal[\\s\\-./]*construction|airport[\\s\\-./]*expansion)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:replacement[\\s\\-./]*airport[\\s\\-./]*terminal|new[\\s\\-./]*airport[\\s\\-./]*terminal|terminal[\\s\\-./]*construction|airport[\\s\\-./]*expansion)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:223"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:replacement[\\s\\-./]*terminal)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:replacement[\\s\\-./]*terminal)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:143"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:response[\\s\\-./]*times)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:response[\\s\\-./]*times)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:109"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:retail[\\s\\-./]*vacancies)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:retail[\\s\\-./]*vacancies)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:136"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:safe[\\s\\-./]*parking)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:safe[\\s\\-./]*parking)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:70"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:school[\\s\\-./]*board)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:school[\\s\\-./]*board)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:112"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:school[\\s\\-./]*budget)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:school[\\s\\-./]*budget)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:116"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:school[\\s\\-./]*closures)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:school[\\s\\-./]*closures)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:122"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:school[\\s\\-./]*enrollment)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:school[\\s\\-./]*enrollment)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:117"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:school[\\s\\-./]*funding[\\s\\-./]*crisis|underfunded[\\s\\-./]*schools|education[\\s\\-./]*cuts|school[\\s\\-./]*cuts|budget[\\s\\-./]*cuts)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:school[\\s\\-./]*funding[\\s\\-./]*crisis|underfunded[\\s\\-./]*schools|education[\\s\\-./]*cuts|school[\\s\\-./]*cuts|budget[\\s\\-./]*cuts)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:208"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:single[\\s\\-./]*use[\\s\\-./]*plastics)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:single[\\s\\-./]*use[\\s\\-./]*plastics)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:152"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:slow[\\s\\-./]*police[\\s\\-./]*response|emergency[\\s\\-./]*dispatch|first[\\s\\-./]*responders|911[\\s\\-./]*delays)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:slow[\\s\\-./]*police[\\s\\-./]*response|emergency[\\s\\-./]*dispatch|first[\\s\\-./]*responders|911[\\s\\-./]*delays)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:207"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:small[\\s\\-./]*business)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:small[\\s\\-./]*business)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:130"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:special[\\s\\-./]*education)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:special[\\s\\-./]*education)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:124"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:street[\\s\\-./]*improvements)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:street[\\s\\-./]*improvements)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:89"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:student[\\s\\-./]*success)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:student[\\s\\-./]*success)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:119"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:studio[\\s\\-./]*jobs)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:studio[\\s\\-./]*jobs)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:126"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:surveillance[\\s\\-./]*cams|plate[\\s\\-./]*scanners|camera[\\s\\-./]*network|plate[\\s\\-./]*readers|cop[\\s\\-./]*cams)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:surveillance[\\s\\-./]*cams|plate[\\s\\-./]*scanners|camera[\\s\\-./]*network|plate[\\s\\-./]*readers|cop[\\s\\-./]*cams)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:204"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:sustainability)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:sustainability)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:153"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:teacher[\\s\\-./]*retention)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:teacher[\\s\\-./]*retention)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:118"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:teacher[\\s\\-./]*shortage|teacher[\\s\\-./]*salaries|teacher[\\s\\-./]*layoffs|teacher[\\s\\-./]*pay|staff[\\s\\-./]*cuts)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:teacher[\\s\\-./]*shortage|teacher[\\s\\-./]*salaries|teacher[\\s\\-./]*layoffs|teacher[\\s\\-./]*pay|staff[\\s\\-./]*cuts)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:209"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:tenant[\\s\\-./]*harassment)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:tenant[\\s\\-./]*harassment)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:52"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:tenant[\\s\\-./]*protections)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:tenant[\\s\\-./]*protections)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:47"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:tenants[\\s\\-./]*rights|renters[\\s\\-./]*rights|landlord[\\s\\-./]*abuse|slumlord)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:tenants[\\s\\-./]*rights|renters[\\s\\-./]*rights|landlord[\\s\\-./]*abuse|slumlord)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:195"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:tourism)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:tourism)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:138"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:traffic[\\s\\-./]*congestion)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:traffic[\\s\\-./]*congestion)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:84"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:traffic[\\s\\-./]*safety)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:traffic[\\s\\-./]*safety)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:85"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:transient[\\s\\-./]*occupancy[\\s\\-./]*tax)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:transient[\\s\\-./]*occupancy[\\s\\-./]*tax)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:30"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:transient[\\s\\-./]*occupancy[\\s\\-./]*tax|TOT)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:transient[\\s\\-./]*occupancy[\\s\\-./]*tax|TOT)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:32"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:trustee[\\s\\-./]*area[\\s\\-./]*3)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:trustee[\\s\\-./]*area[\\s\\-./]*3)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:114"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:trustee[\\s\\-./]*area[\\s\\-./]*4)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:trustee[\\s\\-./]*area[\\s\\-./]*4)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:115"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:upzoning)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:upzoning)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:59"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:wasteful[\\s\\-./]*spending|government[\\s\\-./]*waste|budget[\\s\\-./]*shortfall|budget[\\s\\-./]*deficit|city[\\s\\-./]*finances)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:wasteful[\\s\\-./]*spending|government[\\s\\-./]*waste|budget[\\s\\-./]*shortfall|budget[\\s\\-./]*deficit|city[\\s\\-./]*finances)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:217"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:water[\\s\\-./]*conservation)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:water[\\s\\-./]*conservation)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:156"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:water[\\s\\-./]*restrictions|water[\\s\\-./]*shortage|utility[\\s\\-./]*bills|electric[\\s\\-./]*bill|power[\\s\\-./]*rates|water[\\s\\-./]*rates)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:water[\\s\\-./]*restrictions|water[\\s\\-./]*shortage|utility[\\s\\-./]*bills|electric[\\s\\-./]*bill|power[\\s\\-./]*rates|water[\\s\\-./]*rates)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:226"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:wildfire[\\s\\-./]*prevention)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:wildfire[\\s\\-./]*prevention)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:105"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:yes[\\s\\-./]*on[\\s\\-./]*cc|yes[\\s\\-./]*on[\\s\\-./]*cd|yes[\\s\\-./]*on[\\s\\-./]*c|no[\\s\\-./]*on[\\s\\-./]*cc|no[\\s\\-./]*on[\\s\\-./]*cd|no[\\s\\-./]*on[\\s\\-./]*c)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:yes[\\s\\-./]*on[\\s\\-./]*cc|yes[\\s\\-./]*on[\\s\\-./]*cd|yes[\\s\\-./]*on[\\s\\-./]*c|no[\\s\\-./]*on[\\s\\-./]*cc|no[\\s\\-./]*on[\\s\\-./]*cd|no[\\s\\-./]*on[\\s\\-./]*c)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:215"
+          }
+        }
+      ]
+    },
+    {
+      "text": "\\b(?:zoning)\\b",
+      "match_mode": "regex",
+      "variants": [
+        {
+          "keyword": {
+            "text": "\\b(?:zoning)\\b",
+            "match_mode": "regex"
+          },
+          "origin": {
+            "source": "highlightext_burbank_regex_one_per_line.txt",
+            "location": "line:60"
+          }
+        }
+      ]
+    },
     {
       "text": "call girl",
       "variants": [
