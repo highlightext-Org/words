@@ -119,20 +119,29 @@ def read_source(path):
         return
     if path.suffix.lower() == '.csv':
         with path.open(encoding='utf-8-sig', newline='') as stream:
-            reader = csv.DictReader(stream)
-            columns = set(reader.fieldnames or [])
+            reader = csv.DictReader(stream, strict=True)
+            headers = reader.fieldnames or []
+            if len(headers) != len(set(headers)) or any(not h.strip() for h in headers):
+                raise ValueError(f'{path}: duplicate or empty CSV headers')
+            columns = set(headers)
             if {'pump_profile_url', 'x_handle'} <= columns:
                 kind = 'pump_following'
             elif {'profile_url', 'scanned_at'} <= columns:
                 kind = 'profile_audit'
+            elif 'keyword' in columns:
+                kind = 'keyword'
             else:
                 raise ValueError(f'{path}: unsupported CSV columns {sorted(columns)}')
             for i, row in enumerate(reader, 2):
                 if None in row or None in row.values():
                     raise ValueError(f'{path}:{i}: malformed CSV row')
+                if kind == 'keyword' and not row['keyword'].strip():
+                    raise ValueError(f'{path}:row:{i}: empty keyword')
                 yield kind, f'row:{i}', row, {}
         return
     data = json.loads(path.read_text(encoding='utf-8-sig'))
+    if not isinstance(data, dict):
+        raise ValueError(f'{path}: unsupported JSON schema (expected an object)')
     context = {'exported_at': data.get('exportedAt')}
     if 'snapshots' in data:
         for i, snapshot in enumerate(data['snapshots']):
@@ -149,10 +158,12 @@ def read_source(path):
 
 
 def build(source_dir, output=None):
+    if not source_dir.is_dir():
+        raise ValueError(f'Source directory does not exist: {source_dir}')
     files = sorted(p for p in source_dir.rglob('*') if p.is_file() and p.suffix.lower() in {'.csv', '.json', '.txt'} and (output is None or p.resolve() != output.resolve()))
     if not files:
         raise ValueError(f'No JSON/CSV/TXT sources found in {source_dir}')
-    observations, settings, manifest, warnings, regexes = [], [], [], [], []
+    observations, settings, manifest, warnings, keyword_variants = [], [], [], [], []
     for path in files:
         source = path.relative_to(source_dir).as_posix()
         count = 0
@@ -162,8 +173,13 @@ def build(source_dir, output=None):
             if kind == 'settings':
                 settings.append({'origin': origin, 'context': context, 'raw': raw})
                 continue
-            if kind == 'regex':
-                regexes.append({'keyword': raw, 'origin': origin})
+            if kind in {'regex', 'keyword'}:
+                variant = {'keyword': raw, 'origin': origin}
+                if kind == 'keyword':
+                    variant = {'keyword': {'text': raw['keyword']}, 'origin': origin, 'raw': raw}
+                    if 'category' in raw:
+                        variant['keyword']['category'] = raw['category']
+                keyword_variants.append((kind == 'regex', variant))
                 continue
             fields, handles, wallets, urls, issues = normalize(raw)
             for issue in issues:
@@ -233,15 +249,26 @@ def build(source_dir, output=None):
                 text = ' '.join(keyword['text'].split()).casefold()
                 item = keywords.setdefault(('literal', text), {'text': text, 'variants': []})
                 item['variants'].append({'profile_id': profile['id'], 'profile_name': profile['name'], 'keyword': keyword, 'origin': config['origin']})
-    for variant in regexes:
-        text = variant['keyword']['text']
-        item = keywords.setdefault(('regex', text), {'text': text, 'match_mode': 'regex', 'variants': []})
+    for is_regex, variant in keyword_variants:
+        raw_text = variant['keyword']['text']
+        text = raw_text if is_regex else ' '.join(raw_text.split()).casefold()
+        mode = 'regex' if is_regex else 'literal'
+        entry = {'text': text, 'variants': []}
+        if is_regex:
+            entry['match_mode'] = 'regex'
+        item = keywords.setdefault((mode, text), entry)
         item['variants'].append(variant)
+    keyword_observations = sum(len(k['variants']) for k in keywords.values())
     return {'schema_version': 1, 'sources': manifest,
             'summary': {'source_files': len(files), 'input_records': sum(m['records'] for m in manifest),
                         'profile_observations': len(observations), 'master_profiles': len(entities),
                         'merged_profile_observations': len(observations) - len(entities),
-                        'holdings': len(holdings), 'keywords': len(keywords), 'warnings': len(warnings)},
+                        'holdings': len(holdings), 'keywords': len(keywords),
+                        'literal_keywords': sum(mode == 'literal' for mode, text in keywords),
+                        'regex_keywords': sum(mode == 'regex' for mode, text in keywords),
+                        'keyword_observations': keyword_observations,
+                        'merged_keyword_observations': keyword_observations - len(keywords),
+                        'warnings': len(warnings)},
             'profiles': sorted(entities, key=lambda e: e['id']),
             'holdings': sorted(holdings.values(), key=lambda h: h['id']),
             'keywords': sorted(keywords.values(), key=lambda k: (k['text'], k.get('match_mode', 'literal'))),
@@ -260,7 +287,7 @@ def main():
         temporary = args.output.with_suffix(args.output.suffix + '.tmp')
         temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         temporary.replace(args.output)
-    except (ValueError, KeyError, TypeError, OSError) as error:
+    except (ValueError, KeyError, TypeError, OSError, csv.Error) as error:
         parser.exit(1, f'Error: {error}\n')
     print(json.dumps(result['summary'], indent=2))
     print(f'Wrote {args.output}')

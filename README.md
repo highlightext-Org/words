@@ -43,6 +43,18 @@ The single JSON output contains:
 | Profile audit CSV (both versions) | `profile_url` → website identity; yes/no → booleans; semicolon contact/platform lists → arrays; absent fields remain absent |
 | Keyword Glow JSON | Combine matching keyword text while preserving profile membership, colors, enabled states, and settings |
 | Regex TXT (one pattern per line) | Preserve each nonblank line verbatim as a regex keyword, with source filename and line number; combine exact duplicates while retaining every origin |
+| Keyword CSV (`keyword` column, optional `category`) | Normalize literal keyword whitespace/case for merging; preserve original text, category, all raw columns, and source row in variants |
+
+To add sources, drop supported exports anywhere under `sources/` and rerun
+`python3 scripts/build_master.py`. Filenames do not affect format detection.
+Every run rebuilds from all current sources rather than appending to the previous
+master, so rerunning does not accumulate entries. Duplicate copies contribute
+source references, not extra master keywords. Keep original sources in place;
+removing a file removes its contribution on the next build. Summary counts show
+literal/regex totals, keyword observations, and how many were merged as duplicates.
+Keyword CSVs require a nonempty `keyword` in every row; `category` is optional.
+Quoted commas and UTF-8 BOMs are supported. Duplicate/empty headers and malformed
+rows fail the build rather than silently dropping data.
 
 Every `.txt` source is treated as a UTF-8 (optional BOM) regex list. Blank lines
 are ignored; other lines must compile with Python's `re` module. Patterns have

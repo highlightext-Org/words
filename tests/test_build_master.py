@@ -103,6 +103,50 @@ class MasterTests(unittest.TestCase):
             self.assertIn('bad.txt:line:3: invalid regex', run.stderr)
             self.assertEqual(output.read_text(), 'existing master\n')
 
+    def test_keyword_csv_merges_with_settings_and_duplicate_sources(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder)
+            csv_text = '\ufeffcategory,keyword,notes\nPlaces, Burbank ,"city, local"\nCommunity,BURBANK,second\n'
+            (path / 'a.csv').write_text(csv_text, encoding='utf-8')
+            (path / 'copy.csv').write_text(csv_text, encoding='utf-8')
+            (path / 'glow.json').write_text(json.dumps({
+                'app': 'Keyword Glow', 'settings': {'profiles': [
+                    {'id': 'p', 'name': 'Places', 'keywords': [{'text': 'burbank'}]}]}}))
+            (path / 'patterns.txt').write_text('(?i)Burbank\n')
+            output = path / 'master.json'
+            result = build(path, output)
+            output.write_text(json.dumps(result))
+            self.assertEqual(build(path, output), result)
+            literal = next(k for k in result['keywords'] if k['text'] == 'burbank')
+            self.assertEqual(len(literal['variants']), 5)
+            self.assertEqual(literal['variants'][1]['keyword'], {'text': ' Burbank ', 'category': 'Places'})
+            self.assertEqual(literal['variants'][1]['raw']['notes'], 'city, local')
+            self.assertEqual(literal['variants'][1]['origin'], {'source': 'a.csv', 'location': 'row:2'})
+            self.assertEqual(result['summary']['keywords'], 2)
+            self.assertEqual(result['summary']['merged_keyword_observations'], 4)
+            self.assertEqual(result['summary']['profile_observations'], 0)
+
+    def test_invalid_keyword_csv_fails(self):
+        for content, error in [
+                ('category,keyword\nPlace,  \n', 'empty keyword'),
+                ('keyword,keyword\none,two\n', 'duplicate or empty CSV headers'),
+                ('keyword,\none,two\n', 'duplicate or empty CSV headers'),
+                ('category,keyword\nPlace\n', 'malformed CSV row'),
+                ('keyword\none,two\n', 'malformed CSV row')]:
+            with self.subTest(content=content), tempfile.TemporaryDirectory() as folder:
+                path = Path(folder)
+                (path / 'keywords.csv').write_text(content)
+                with self.assertRaisesRegex(ValueError, error):
+                    build(path)
+
+    def test_keyword_csv_without_category(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder)
+            (path / 'keywords.csv').write_text('keyword\nCity   Hall\n')
+            result = build(path)
+            self.assertEqual(result['keywords'][0]['text'], 'city hall')
+            self.assertEqual(result['keywords'][0]['variants'][0]['keyword'], {'text': 'City   Hall'})
+
     def test_latest_value_can_return_to_previous_value(self):
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder)
